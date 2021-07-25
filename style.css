@@ -18,10 +18,11 @@ html{
     width: 100%;
     padding: 30px 0;
     transition: all 0.4s ease;
+    z-index: 10000;
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: red;
+    background: #333;
 }
 .navbar .max-width{
     display: flex;
@@ -177,9 +178,26 @@ html{
     .about .about-content .right{
         flex: 100%;
     }
-    .projects .projects-content .card{
-        width: 100%;
-        margin-bottom: 20px;
+    
+}
+@media (max-width:680px){
+    .max-width{
+        padding: 0 23px;
+    }
+    .home .home-content .text-2{
+        font-size: 60px;
+    }
+    .home .home-content  .text-3{
+        font-size: 32px;
+    }
+    
+}
+@media (max-width:500px){
+    .home .home-content .text-2{
+        font-size: 50px;
+    }
+    .home .home-content  .text-3{
+        font-size: 26px;
     }
 }
 /* similar part */
@@ -244,13 +262,17 @@ section .title::after{
 .about .about-content .right .text{
     font-size: 25px;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 .about .about-content .right .text span{
     color: crimson;
 }
 .about .about-content .right p{
     text-align: justify;
+}
+.intro{
+    font-size: 18px;
+    line-height: 1.5;
 }
 
 /* project */
@@ -270,8 +292,13 @@ section .title::after{
     background: #222;
     text-align: center;
     border-radius: 6px;
-    padding: 20px 25px;
+    padding: 25px;
     cursor: pointer;
+}
+.projects .projects-content .card:hover{
+    width: calc(36%);
+    background: #fff;
+    padding: 36px;
 }
 .projects .projects-content .card i{
     font-size: 50px;
