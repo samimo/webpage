@@ -252,7 +252,7 @@ section .title::after{
 }
 .about .about-content .left img{
     height: 400px;
-    width: 400px;
+    width: 350px;
     object-fit: cover;
     border-radius: 6px;
 }
@@ -288,17 +288,18 @@ section .title::after{
     content: 'what i have';    
 }
 .projects .projects-content .card{
-    width: calc(33% - 20px);
+    width: calc(50% - 20px);
     background: #222;
     text-align: center;
     border-radius: 6px;
-    padding: 25px;
+    padding: 40px;
     cursor: pointer;
 }
 .projects .projects-content .card:hover{
-    width: calc(36%);
+    width: calc(50%);
     background: #fff;
     padding: 36px;
+    transition: all .5s ease;
 }
 .projects .projects-content .card i{
     font-size: 50px;
